@@ -21,7 +21,7 @@ const Bigcard = ({ image, range }) => {
   return (
     <div
       id="shadow"
-      className="w-full h-fit flex flex-col bg-white p-[4.5%] rounded-xl"
+      className={`w-full h-fit flex flex-col bg-white p-[4.5%] rounded-xl ${range === "" ? "mt-[1em]" : "mt-[0em]"}`}
     >
       <img src={image} alt="a pink card" />
       <h4 className="mt-[1.250em] text-[#000000] font-semibold text-[1em]">

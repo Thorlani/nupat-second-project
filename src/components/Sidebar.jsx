@@ -6,8 +6,8 @@ import activities from "../assets/activities.svg";
 import users from "../assets/users.svg";
 import affiliate from "../assets/affiliate.svg";
 import settings from "../assets/settings.svg";
-import profile from "../assets/profile.svg";
-import logout from "../assets/logout.svg";
+import power from "../assets/power.svg";
+import participant from "../assets/participant.svg";
 import addUser from "../assets/add-user.svg";
 
 const Sidebar = () => {
@@ -23,50 +23,50 @@ const Sidebar = () => {
         <ul className="w-full h-[500px] flex flex-col justify-around">
           <li className="flex items-center cursor-pointer">
             <img src={dashboard} alt="button logo" />
-            <p className="text-[#ffffff] ml-2 text-[0.875em] font-normal">
+            <p className="text-[#ffffff] hover:text-[#000000] ml-2 text-[0.875em] font-normal">
               Dashboard
             </p>
           </li>
           <li className="flex items-center cursor-pointer">
             <img src={settings} alt="button logo" />
-            <p className="text-[#ffffff] ml-2 text-[0.875em] font-normal">
+            <p className="text-[#ffffff] hover:text-[#000000] ml-2 text-[0.875em] font-normal">
               Settings
             </p>
           </li>
           <li className="flex items-center cursor-pointer">
             <img src={activities} alt="button logo" />
-            <p className="text-[#ffffff] ml-2 text-[0.875em] font-normal">
+            <p className="text-[#ffffff] hover:text-[#000000] ml-2 text-[0.875em] font-normal">
               Activities
             </p>
           </li>
           <li className="flex items-center cursor-pointer">
             <img src={users} alt="button logo" />
-            <p className="text-[#ffffff] ml-2 text-[0.875em] font-normal">Users</p>
+            <p className="text-[#ffffff] hover:text-[#000000] ml-2 text-[0.875em] font-normal">Users</p>
           </li>
           <li className="flex items-center cursor-pointer">
             <img src={addUser} alt="button logo" />
-            <p className="text-[#ffffff] ml-2 text-[0.875em] font-normal">
+            <p className="text-[#ffffff] hover:text-[#000000] ml-2 text-[0.875em] font-normal">
               Added user
             </p>
           </li>
           <li className="flex items-center cursor-pointer">
             <img src={affiliate} alt="button logo" />
-            <p className="text-[#ffffff] ml-2 text-[0.875em] font-normal">
+            <p className="text-[#ffffff] hover:text-[#000000] ml-2 text-[0.875em] font-normal">
               Affiliate
             </p>
           </li>
           <li>
-            <div className="w-full h-[1px] bg-[#ffffff]"></div>
+            <div className="w-full h-[1px] bg-[#7D8088]"></div>
           </li>
           <li className="flex items-center cursor-pointer">
-            <img src={profile} alt="button logo" />
-            <p className="text-[#ffffff] ml-2 text-[0.875em] font-normal">
+            <img src={power} alt="button logo" />
+            <p className="text-[#7D8088] hover:text-[#000000] ml-2 text-[0.875em] font-normal">
               Profile
             </p>
           </li>
           <li className="flex items-center cursor-pointer">
-            <img src={logout} alt="button logo" />
-            <p className="text-[#ffffff] ml-2 text-[0.875em] font-normal">
+            <img src={participant} alt="button logo" />
+            <p className="text-[#7D8088] hover:text-[#000000] ml-2 text-[0.875em] font-normal">
               Logout
             </p>
           </li>
