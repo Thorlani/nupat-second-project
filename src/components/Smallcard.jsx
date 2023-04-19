@@ -16,7 +16,9 @@ const Smallcard = ({ range }) => {
         </div>
       );
     } else {
-      return <div className="w-full h-2 rounded-3xl bg-[#8BC488] mt-2"></div>;
+      return (
+        <div className="w-full 2xl:w-[70%] h-2 rounded-3xl 2xl:rounded-none 2xl:rounded-l-3xl bg-[#8BC488] mt-2"></div>
+      );
     }
   };
   return (

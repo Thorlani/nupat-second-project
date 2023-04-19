@@ -11,17 +11,21 @@ const Bigcard = ({ image, range }) => {
     } else if (range === "semifull") {
       return (
         <div className="w-full h-2 rounded-3xl bg-[#EBEBEB] mt-2">
-          <div className="w-[55%] h-full bg-[#FF5F37] rounded-l-3xl"></div>
+          <div className="w-[55%] 2xl:w-[40%] h-full bg-[#FF5F37] rounded-l-3xl"></div>
         </div>
       );
     } else {
-      return <div className="w-full h-2 rounded-3xl bg-[#8BC488] mt-2"></div>;
+      return (
+        <div className="w-full 2xl:w-[70%] h-2 rounded-3xl 2xl:rounded-none 2xl:rounded-l-3xl bg-[#8BC488] mt-2"></div>
+      );
     }
   };
   return (
     <div
       id="shadow"
-      className={`w-full h-fit flex flex-col bg-white p-[4.5%] rounded-xl ${range === "" ? "mt-[1em]" : "mt-[0em]"}`}
+      className={`w-full h-fit flex flex-col bg-white p-[4.5%] rounded-xl ${
+        range === "" ? "mt-[1em]" : "mt-[0em]"
+      }`}
     >
       <img src={image} alt="a pink card" />
       <h4 className="mt-[1.250em] text-[#000000] font-semibold text-[1em]">
@@ -37,7 +41,7 @@ const Bigcard = ({ image, range }) => {
         </div>
         <span className="text-[#000000] font-medium text-[0.875em]">2/10</span>
       </div>
-        {rangeLevel()}
+      {rangeLevel()}
       <div className="flex justify-between items-center mt-2">
         <div className="flex">
           <div className="flex items-center">
