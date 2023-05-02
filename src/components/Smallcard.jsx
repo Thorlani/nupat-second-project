@@ -23,7 +23,7 @@ const Smallcard = ({ range }) => {
   };
   return (
     <div
-      className={`w-full h-fit flex flex-col bg-white p-[4.5%] rounded-xl ${
+      className={`w-full h-fit flex flex-col mb-2 sm:mb-0 bg-white p-[4.5%] rounded-xl ${
         range === "" ? "mt-[0em]" : "mt-[1em]"
       }`}
     >

@@ -4,7 +4,7 @@ import plus from "../assets/plus.svg";
 const Addbtn = () => {
   return (
     <button
-      className="w-full h-fit flex justify-center items-center bg-[#F2F4F5] py-3 mt-[1em] rounded-xl border-dashed border-[
+      className="w-full h-fit mb-3 sm:mb-0 flex justify-center items-center bg-[#F2F4F5] py-3 mt-[1em] rounded-xl border-dashed border-[
 #D5D5D5] border-[1.5px]"
     >
       <img src={plus} alt="a plus icon" />
