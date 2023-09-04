@@ -83,7 +83,7 @@ const Sidebar = ({ click, displayNav }) => {
           </li>
         </ul>
       </div>
-      <button className="flex items-center w-fit h-fit p-[14px] xl:px-[14%] xl:py-[8%] bg-[#703EFE] rounded-lg">
+      <button className="flex items-center w-fit h-fit p-[14px] mt-[100px] xl:px-[14%] xl:py-[8%] bg-[#703EFE] rounded-lg">
         <img src={btnPlus} alt="button logo" />
         <p className="text-[#ffffff] ml-2 text-[1em] font-normal">
           NEW PROJECT
