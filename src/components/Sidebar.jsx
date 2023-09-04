@@ -12,8 +12,15 @@ import addUser from "../assets/add-user.svg";
 
 const Sidebar = ({ click, displayNav }) => {
   return (
-    <div className="w-full h-full bg-[#1D1042] px-[8%] py-[10%] flex flex-col justify-between items-start">
+    <div className="w-full h-[100vh] overflow-y-scroll bg-[#1D1042] px-[8%] py-[10%] flex flex-col justify-between items-start no-scrollbar">
       <div className="w-full flex flex-col items-start">
+        <div className="w-full flex justify-end items-center mb-[8%]">
+          <div className="mt-2 xl:hidden" onClick={click}>
+            <div className="w-[29px] h-[3px] bg-[#ffffff] mb-1"></div>
+            <div className="w-[25px] h-[3px] bg-[#ffffff] mb-1"></div>
+            <div className="w-[20px] h-[3px] bg-[#ffffff] mb-1"></div>
+          </div>
+        </div>
         <div className="w-full flex justify-between items-start">
           <button className="flex items-center w-fit h-fit p-[14px] xl:px-[14%] xl:py-[5%] bg-[#45269C] rounded-lg mb-[10%]">
             <img src={btnLogo} alt="button logo" />
@@ -21,11 +28,6 @@ const Sidebar = ({ click, displayNav }) => {
               Welcome Keerthi
             </p>
           </button>
-          <div className="mt-2 xl:hidden" onClick={click}>
-            <div className="w-[29px] h-[3px] bg-[#ffffff] mb-1"></div>
-            <div className="w-[25px] h-[3px] bg-[#ffffff] mb-1"></div>
-            <div className="w-[20px] h-[3px] bg-[#ffffff] mb-1"></div>
-          </div>
         </div>
         <ul className="w-full h-[500px] flex flex-col justify-around">
           <li className="flex items-center cursor-pointer">
